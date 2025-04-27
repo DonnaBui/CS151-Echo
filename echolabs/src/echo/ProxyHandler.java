@@ -14,6 +14,7 @@ public class ProxyHandler extends RequestHandler {
 		peer.requestConnection(peerHost, peerPort);
 	}
 
+	@Override
 	protected String response(String msg) throws Exception {
        peer.send(msg); // forward msg to peer
        return peer.receive(); // return peer's response
