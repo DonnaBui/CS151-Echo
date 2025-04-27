@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ProxyServer",
+            "request": "launch",
+            "mainClass": "echo.ProxyServer",
+            "projectName": "CS151-Echo_1e94fd57"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "echo.Server",
+            "projectName": "CS151-Echo_1e94fd57"
+        },
+        {
+            "type": "java",
+            "name": "SimpleClient",
+            "request": "launch",
+            "mainClass": "echo.SimpleClient",
+            "projectName": "CS151-Echo_1e94fd57"
+        }
+    ]
+}
