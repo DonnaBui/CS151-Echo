@@ -1,4 +1,6 @@
-package echo;
+package echoCustomizations;
+
+import echo.*;
 import java.net.Socket;
 
 class HitCounter {
@@ -6,7 +8,6 @@ class HitCounter {
     synchronized public void incHits() { hits++; }
     synchronized public int getHits() { return hits; }
 }
-
 public class HitCountHandler extends ProxyHandler {
 
    private static HitCounter counter = new HitCounter();
@@ -20,7 +21,6 @@ public class HitCountHandler extends ProxyHandler {
         counter.incHits();
     }
 
-    @Override
     protected String response(String request) throws Exception {
         if (request.equalsIgnoreCase("hits")) {
             return "" + counter.getHits();

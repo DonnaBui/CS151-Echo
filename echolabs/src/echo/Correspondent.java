@@ -67,4 +67,24 @@ public class Correspondent {
 		}
 		return msg;
 	}
-} // Correspondent
+
+	/* Lab 6: Future assignment?
+	1. Add a method to write an object to the socket.
+	Add object input and output streams to the Correspondent class. 
+	Initialize them with the socket's input/output streams in the initStreams method.
+	Provide methods:
+	    void writeObject(Object msg) { ... }
+		Object readObject() { ... }
+
+	2. Add Message.java class to the echo package.
+	3. Modify SimpleClient so that it wraps the user input in a message, 
+	then sends it to the server using sendObject:
+		sendObject(new Message<String>(msg));
+	Use receivedObject to receive the server's response.
+
+	4. Also modify RequestHandler so that it receives requests using requestObject. 
+	If the request is an instance of Message<String>, then pass its content to the response method. 
+	Wrap the return value into a message and send it back to the client using sendObject.
+	5. Test using the MathHandler and the CacheHandler.
+	*/
+} 

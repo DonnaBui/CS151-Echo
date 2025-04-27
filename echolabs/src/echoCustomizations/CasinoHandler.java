@@ -1,4 +1,4 @@
-package casino;
+package echoCustomizations;
 
 import java.net.*;
 import java.util.Random;

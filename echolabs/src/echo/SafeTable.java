@@ -17,13 +17,13 @@ public class SafeTable extends HashMap<String,String> {
 
     // Synchronized methods, thread safe
     @Override
-    public synchronized String get(Object key) { 
-        return super.get(key);
+    public synchronized String get(Object request) { 
+        return super.get(request);
     }
 
     @Override
-    public synchronized String put(String key, String value) {
-        return super.put(key, value);
+    public synchronized String put(String request, String reply) {
+        return super.put(request, reply);
     }
 
 }

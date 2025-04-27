@@ -1,4 +1,4 @@
-package casino;
+package echoCustomizations;
 
 import echo.ProxyHandler;
 

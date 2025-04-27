@@ -19,4 +19,14 @@ public class ProxyHandler extends RequestHandler {
        peer.send(msg); // forward msg to peer
        return peer.receive(); // return peer's response
 	}
+
+	@Override
+    protected void shutDown() {
+        // shut peer down too
+        if (peer != null) {
+            peer.send("quit");
+            peer.close();
+        }
+        super.shutDown();
+    }
 }
